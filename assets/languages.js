@@ -29,7 +29,7 @@
   }
 
   // Manual choices take priority. Otherwise use the browser's primary language.
-  const supported = new Set(['en', 'es', 'zh', 'ja']);
+  const supported = new Set(['en', 'es', 'zh', 'ja', 'ar']);
   let saved;
   try { saved = localStorage.getItem(preferenceKey); } catch (error) {}
   const browserLanguage = ((navigator.languages || [])[0] || navigator.language || '').toLowerCase().split('-')[0];
